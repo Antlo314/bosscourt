@@ -232,10 +232,12 @@ h1, h2, h3, h4 {
   left: 50%;
   width: 100vw;
   height: 100vh;
+  min-height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
   filter: contrast(1.1) saturate(1.2) brightness(0.7);
   z-index: -2;
+  pointer-events: none;
 }
 
 .hero-overlay {
@@ -580,6 +582,14 @@ h1, h2, h3, h4 {
 
   .hero-section {
     min-height: 100vh;
+    height: 100vh; /* Fix for mobile browser UI bars */
+    overflow: hidden;
+  }
+
+  .hero-video-bg {
+    width: 100vw;
+    height: 100vh;
+    object-position: center center;
   }
 
   .hero-content {
