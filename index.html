@@ -1,13 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>temp</title>
+    <title>Boss Court TV - The Gavel Strikes</title>
+    <meta name="description" content="A new TV show where aspiring bosses win funding to fuel their dreams! Pitch your business to Dr. Glenda S. Williams, the Boss Judge.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <header class="main-header">
+      <div class="container header-container">
+        <a href="#" class="logo-link">
+          <img src="/images/logo.png" alt="Boss Court TV Logo" class="logo">
+        </a>
+        <nav class="main-nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#casting" class="nav-link">Casting</a>
+          <a href="https://form.jotform.com/250853409846162" target="_blank" class="btn btn-primary btn-glow">Apply Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-text-box reveal">
+            <h2 class="hero-subtitle">A New TV Show Where Aspiring Bosses Win Funding to Fuel Their Dreams!</h2>
+            <h1 class="hero-title">The Gavel Strikes—Who Wins, Who Falls?</h1>
+            <p class="hero-description">The Boss Judge will hear the case of two ambitious entrepreneurs going head-to-head to pitch their businesses. The winner will be awarded funding to propel their vision.</p>
+            <div class="hero-actions">
+              <a href="https://form.jotform.com/250853409846162" target="_blank" class="btn btn-large btn-gold">Face The Boss Judge</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section pt-pb-large">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-content reveal">
+              <h2 class="section-title">Are you ready to face the Boss Judge?</h2>
+              <div class="title-separator"></div>
+              <p class="section-text">
+                Boss Court with Dr. Glenda S. Williams is a brand-new, groundbreaking television show set to air worldwide, and we're looking for aspiring entrepreneurs like YOU to take the SPOTLIGHT!
+              </p>
+              <p class="section-text">
+                In this fun, energetic, and sharp-edged business competition, two ambitious entrepreneurs go head-to-head, pleading their case to prove why their business is the best. Guiding the showdown is Dr. Glenda S. Williams, the ultimate Boss Judge, who brings her expertise, humor, and no-nonsense business wisdom to the table.
+              </p>
+              <p class="section-text">
+                Contestants will receive valuable insights and transformative advice, but only one business will rise to victory for funding, handpicked by Dr. Williams herself.
+              </p>
+            </div>
+            <div class="about-image-wrapper reveal delay-1">
+              <div class="image-card glassmorphic">
+                <img src="/images/judge_portrait.png" alt="Dr. Glenda S. Williams - The Boss Judge" class="about-image" />
+                <div class="image-caption">Dr. Glenda S. Williams<br><span>The Boss Judge</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Casting Section -->
+      <section id="casting" class="casting-section pt-pb-large">
+        <div class="container">
+          <div class="casting-header reveal">
+            <h2 class="section-title text-center">Casting Audition</h2>
+            <p class="section-subtitle text-center">Boss Court TV is looking for you!</p>
+          </div>
+          
+          <div class="casting-grid">
+            <div class="casting-poster reveal delay-1">
+              <img src="/images/ad_poster.jpg" alt="Boss Court TV Casting Poster" class="poster-image" />
+            </div>
+            <div class="casting-info glassmorphic reveal delay-2">
+              <div class="date-badge">
+                <span class="date-text">Filming In Atlanta, GA</span>
+                <span class="date-highlight">September 21, 2025</span>
+              </div>
+              <h3 class="casting-title">Apply Now To Pitch Your Business Or Be An Audience Member</h3>
+              <p class="casting-desc">If you want to be a contestant on Boss Court TV, this is an incredible opportunity to showcase your business, secure funding, and gain valuable exposure on TV!</p>
+              <blockquote class="casting-quote">"The enhancement place where BUSINESS MEETS FUNDING."</blockquote>
+              
+              <div class="application-steps">
+                <div class="step">
+                  <span class="step-num">1</span>
+                  <p>Complete the Casting Submission Form</p>
+                </div>
+                <div class="step">
+                  <span class="step-num">2</span>
+                  <p>You will receive a follow-up email to proceed with your video submission.</p>
+                </div>
+              </div>
+              
+              <a href="https://form.jotform.com/250853409846162" target="_blank" class="btn btn-large btn-gold full-width mt-4">Start Casting Submission</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Show Details Image Section -->
+      <section class="banner-image-section">
+        <div class="banner-container reveal">
+          <img src="/images/main_image.jpg" alt="Boss Court Behind the Scenes" class="banner-image" />
+          <div class="banner-overlay"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container footer-container">
+        <div class="footer-logo">
+          <img src="/images/logo.png" alt="Boss Court TV" class="logo grayscale">
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="mailto:Info@BossCourtTV.com" class="footer-email">Info@BossCourtTV.com</a>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Boss Court TV. All Rights Reserved.</p>
+          <p class="powered-by">Powered by Boss Court TV</p>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
